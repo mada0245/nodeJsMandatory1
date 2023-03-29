@@ -1,18 +1,18 @@
 //PAGE URL CONNECTIONS
-const thisLocalHost = "http://localhost:8080"
+const thisLocalHost = "http://localhost:3000"
 
-const addLoginPageURL = ""
-const addMainPageURL = "" 
+const addLoginPageURL = "/"
+const addMainPageURL = "/mainPage" 
 
-const addLesson1PageURL = ""
-const addLesson2PageURL = ""
-const addLesson3PageURL = ""
-const addLesson4PageURL = ""
-const addLesson5PageURL = ""
-const addLesson6PageURL = ""
-const addLesson7PageURL = ""
-const addLesson8PageURL = ""
-const addLesson9PageURL = ""
+const addLesson1PageURL = "/mainPage/lesson1"
+const addLesson2PageURL = "/mainPage/lesson2"
+const addLesson3PageURL = "/mainPage/lesson3"
+const addLesson4PageURL = "/mainPage/lesson4"
+const addLesson5PageURL = "/mainPage/lesson5"
+const addLesson6PageURL = "/mainPage/lesson6"
+const addLesson7PageURL = "/mainPage/lesson7"
+const addLesson8PageURL = "/mainPage/lesson8"
+const addLesson9PageURL = "/mainPage/lesson9"
 
 
 //PAGE TRASNFER FUCTIONS
@@ -23,6 +23,9 @@ function goLoginPage(){
 function goMainPage(){
     window.location = thisLocalHost + addLesson1PageURL
 }
+
+
+
 
 
 function goLesson1Page(){
