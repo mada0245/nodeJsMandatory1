@@ -17,11 +17,11 @@ const addLesson9PageURL = "/mainPage/lesson9"
 
 //PAGE TRASNFER FUCTIONS
 function goLoginPage(){
-    window.location = thisLocalHost + addLesson1PageURL
+    window.location = thisLocalHost + addLoginPageURL
 }
 
 function goMainPage(){
-    window.location = thisLocalHost + addLesson1PageURL
+    window.location = thisLocalHost + addMainPageURL
 }
 
 
