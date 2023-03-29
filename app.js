@@ -3,11 +3,20 @@ const app = express();
 
 app.use(express.static("public"));
 
+
+
+
+
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/public/frontEnd/loginPage/loginPage.html");
 });
 
-const PORT = 8080;
+
+
+
+
+
+const PORT = 3000;
 app.listen(PORT, (error) => {
     if (error) {
         console.log(error);
