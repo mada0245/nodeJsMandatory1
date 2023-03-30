@@ -26,6 +26,14 @@ body{
     font-size: 10px;
 }
 
+.text{
+    margin-left: 100px;
+    text-align: left;
+}
+
+.text2{
+    margin-left: 200px;
+}
 
 /*buttons*/
 
