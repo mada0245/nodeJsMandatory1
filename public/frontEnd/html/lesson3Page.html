@@ -19,9 +19,47 @@
        
     </div>
     <div class = "WhatDidWeLearn text text2" id = "LearningTopics3">
-        
-
-        
+        <h3>1 - How to loop in arrays in javascript</h3>
+        <h4>Basic loop</h4>
+        <p>("
+            const numbers = [1, 2, 3, 4, 5];
+                for (let i = 0; i < numbers.length; i++) {
+                console.log(numbers[i]);
+                }    
+        ")</p>
+        <h4>map() method -> Is an array method that allowsto create a new array by calling a function on each element of the original array</h4>
+        <p>("'
+            const numbers = [1, 2, 3, 4, 5];
+            const doubledNumbers = numbers.map((num) => num * 2);
+            console.log(doubledNumbers);    
+        ")</p>
+        <h4>filter() method -> Is an array method that allows to create a new array with elements that return true from the function</h4>
+        <p>("
+            const numbers = [1, 2, 3, 4, 5];
+            const evenNumbers = numbers.filter((num) => num % 2 === 0);
+            console.log(evenNumbers);    
+        ")</p>
+        <h4>reduce() method -> Is an array method that allows to reduce an array to a single value by executing a function on each element</h4>
+        <p>("
+            const numbers = [1, 2, 3, 4, 5];
+            const sum = numbers.reduce((acc, num) => acc + num, 0);
+            console.log(sum);    
+        ")</p>
+        <p>Note that is usually better to make loops is functions, in javascript</p>
+        <p>This is becaouse the code is more readablle, the loop can be reused, the code has can be easier divided and structured and it is easier to find and fix bugs</p>
+        <br>
+        <br>
+        <h3>2 - Node.js modules</h3>
+        <p>Node.js modules are reusable pieces of code that can be imported and used in other parts</p>
+        <p>The make the code more organised and reduce the code duplications</p>
+        <p>To use a module it is needed to import it using the require() function which takes the path to the module file as an argument</p>
+        <br>
+        <br>
+        <h3>3 - Security need for serving static files in Express</h3>
+        <p>Use the express.static to serve static files. This automatically sets the correct MIME type for each file and prevents directory attacks.</p>
+        <p>Store static files in a separate directory that is not accessible to the public. Files cant be accessed by manipulating the URL</p>
+        <p>Use a Content Security Policy (CSP) to prevent content injection attacks. A CSP is a security mechanism that allows you to control which resources can be loaded by your application.</p>
+        <p>Set the Content-Security-Policy header in the HTTP response which tells what can resources can be loaded by the application</p>
         <br>
         <br>
         <br>
