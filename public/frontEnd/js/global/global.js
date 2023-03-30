@@ -12,6 +12,7 @@ const addLesson5PageURL = "/mainPage/lesson5"
 const addLesson6PageURL = "/mainPage/lesson6"
 const addLesson7PageURL = "/mainPage/lesson7"
 const addLesson8PageURL = "/mainPage/lesson8"
+const addNewPageURL = "/mainPage/newPage"
 
 
 //PAGE TRASNFER FUCTIONS
@@ -23,6 +24,9 @@ function goMainPage(){
     window.location = thisLocalHost + addMainPageURL
 }
 
+function goNewPage(){
+    window.location = thisLocalHost + addNewPageURL
+}
 
 
 

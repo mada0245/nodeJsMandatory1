@@ -1,5 +1,8 @@
 const express = require("express");
 const app = express();
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static("public/frontEnd"));
 
@@ -11,6 +14,10 @@ app.get("/", (req, res) => {
 
 app.get("/mainPage", (req, res) => {
     res.sendFile(__dirname + "/public/frontEnd/html/mainPage.html");
+});
+
+app.get("/mainPage/newPage", (req, res) => {
+    res.sendFile(__dirname + "/public/frontEnd/html/newPage.html");
 });
 
 app.get("/mainPage/lesson1", (req, res) => {
@@ -43,6 +50,14 @@ app.get("/mainPage/lesson7", (req, res) => {
 
 app.get("/mainPage/lesson8", (req, res) => {
     res.sendFile(__dirname + "/public/frontEnd/html/lesson8Page.html");
+});
+
+
+app.post('/submit-form', (req, res) => {
+  const text = req.body.text;
+  const description = req.body.description;
+  //something 
+  console.log(description, text);
 });
 
 
