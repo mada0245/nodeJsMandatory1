@@ -45,10 +45,6 @@ app.get("/mainPage/lesson8", (req, res) => {
     res.sendFile(__dirname + "/public/frontEnd/html/lesson8Page.html");
 });
 
-app.get("/mainPage/lesson9", (req, res) => {
-    res.sendFile(__dirname + "/public/frontEnd/html/lesson9Page.html");
-});
-
 
 const PORT = 3000;
 app.listen(PORT, (error) => {
