@@ -1,116 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lesson2Page</title>
-    <link rel="stylesheet" href="../css/global/global.css">
-</head>
-<body>
-    <div>
-        <h1>Lesson 2</h1>
-    </div>
-    <div class = "description text" id = "description2">
-        <h2 >Description</h2>
-        <p>1 - Understand scoping in Javascript and know to always use const if you can get away with it otherwise let</p>
-        <p>2 - Understand advanced things about functions in Javascript</p>
-        <p>3 - Understands Package.json and can set it up by hand</p>
-        <p>4 - Can write callback functions with different syntax</p>
-        <p>5 - Understands how to send data with GET requests over HTTP and knows how to do it in Express</p>
-    </div>
-    <div class = "WhatDidWeLearn text text2" id = "LearningTopics2">
-        <h3>1 - Why should we always use const or let instead of var ?</h3>
-        <p>They have more predictable behavior and help to make the code more readable and maintainable</p>
-        <h4>Problems with var:</h4>
-        <p> Function scoping: Variables declared with var are function-scoped, they can be accessed in the entire function where they are declared. They can be hard to understand where are being used which can bring bugs</p>
-        <p> They are on the top of the scope, they can be accessed before are declared</p>
-        <p> They can be reassigned and have theier value changed, using const this problem will not happen or let if values have to be changed</p>
-        <br>
-        <br>
-        <h3>2 - Call back function in java script</h3>
-        <p>It is a function that is passed as an argument to other function and is executed after some operation is finished</p>
-        <p>("
-            function functionName(name, callback) {
-                console.log(`Hello, ${name}!`);
-                callback();
-              }    
-        ")</p>
-        <p>("
-            function callBackName() {
-                console.log("Smith");
-              }    
-        ")</p>
-        <p>("
-            FunctionName("Peter", callBackName);
-        ")</p>
-        <p>In this exemple, first, the functionName() has two varianles, name and call back. When executed it acepts the name and waits for the callBack() to run the second name and then prints it in the console</p>
-        <br>
-        <br>
-        <h3>3 - This is how to set up a package.json:</h3>
-        <p>go to the project directory</p>
-        <p>("npm init") -> initialize a new package.json</p>
-        <p>from this point you can modify the package.json</p>
-        <p>you can also write the package by heand:</p>
-        <p>("
-                {
-                "name": "my-package",
-                "version": "1.0.0",
-                "description": "My first Node.js package",
-                "main": "index.js",
-                "dependencies": {
-                  "express": "^4.17.1"
-                }
-            } 
-        ")</p>
-        <p>In this exeple we have some iformation about the package and some dependencies of it </p>
-        <p>It is writn in JSON format</p>
-        <p>The object has name, version, description, main and dependencies as proprieties and dependencies itself is an object with express as a proprietie</p>
-        <br>
-        <br>
-        <h3>4 - Call back function with a diffret syntax:</h3>
-        <p>("
-            function functionName(callback) {
-                setTimeout(function() {
-                  console.log("Peter");
-                  callback();
-                }, 1000);
-              }
-        ")</p>
-        <p>("
-            secondName(function() {
-                console.log("Smith");
-              });   
-        ")</p>
-        <p>In this exemple we present a anonymous call back function</p>
-        <p>First, the functionName() takes a callback function as an argumernt</p>
-        <p>It simulates an asynchrous operation using setTimeout and after call the callback function.</p>
-        <p>The anonymous callBack function is defined using function(), whithout giving a name.</p>
-        <p>After the time out passes both messages are presented showing the full name.</p>
-        <br>
-        <br>
-        <h3>5 - Send data with GET requests over HTTP in express</h3>
-        <p>Data can be sent with GET requests by including it as query parameters in the URL</p>
-        <p> Insie the get we can write before sending the data:</p>
-        <p>("
-             const search = req.query.q;
-             const result = serachData(serach);
-             res.send = result;    
-        ")</p>
-        <p>where the data that we want to find can be a const or array of data we presented before</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </div>
-    <div>
-        <button class="confirmButton button confirmLessonButton" onclick="goMainPage()">Main Page</button>
-        <br>
-        <br>
-        <button class="cancelButton button cancelLessonButton" onclick="goLoginPage()">Logout</button>
-    </div>
-    <script src="../js/global/global.js"></script>
-</body>
-</html>
+<div>
+    <h1>Lesson 2</h1>
+</div>
+<div class = "description text" id = "description2">
+    <h2 >Description</h2>
+    <p>1 - Understand scoping in Javascript and know to always use const if you can get away with it otherwise let</p>
+    <p>2 - Understand advanced things about functions in Javascript</p>
+    <p>3 - Understands Package.json and can set it up by hand</p>
+    <p>4 - Can write callback functions with different syntax</p>
+    <p>5 - Understands how to send data with GET requests over HTTP and knows how to do it in Express</p>
+</div>
+<div class = "WhatDidWeLearn text text2" id = "LearningTopics2">
+    <h3>1 - Why should we always use const or let instead of var ?</h3>
+    <p>They have more predictable behavior and help to make the code more readable and maintainable</p>
+    <h4>Problems with var:</h4>
+    <p> Function scoping: Variables declared with var are function-scoped, they can be accessed in the entire function where they are declared. They can be hard to understand where are being used which can bring bugs</p>
+    <p> They are on the top of the scope, they can be accessed before are declared</p>
+    <p> They can be reassigned and have theier value changed, using const this problem will not happen or let if values have to be changed</p>
+    <br>
+    <br>
+    <h3>2 - Call back function in java script</h3>
+    <p>It is a function that is passed as an argument to other function and is executed after some operation is finished</p>
+    <p>("
+        function functionName(name, callback) {
+            console.log(`Hello, ${name}!`);
+            callback();
+          }    
+    ")</p>
+    <p>("
+        function callBackName() {
+            console.log("Smith");
+          }    
+    ")</p>
+    <p>("
+        FunctionName("Peter", callBackName);
+    ")</p>
+    <p>In this exemple, first, the functionName() has two varianles, name and call back. When executed it acepts the name and waits for the callBack() to run the second name and then prints it in the console</p>
+    <br>
+    <br>
+    <h3>3 - This is how to set up a package.json:</h3>
+    <p>go to the project directory</p>
+    <p>("npm init") -> initialize a new package.json</p>
+    <p>from this point you can modify the package.json</p>
+    <p>you can also write the package by heand:</p>
+    <p>("
+            {
+            "name": "my-package",
+            "version": "1.0.0",
+            "description": "My first Node.js package",
+            "main": "index.js",
+            "dependencies": {
+              "express": "^4.17.1"
+            }
+        } 
+    ")</p>
+    <p>In this exeple we have some iformation about the package and some dependencies of it </p>
+    <p>It is writn in JSON format</p>
+    <p>The object has name, version, description, main and dependencies as proprieties and dependencies itself is an object with express as a proprietie</p>
+    <br>
+    <br>
+    <h3>4 - Call back function with a diffret syntax:</h3>
+    <p>("
+        function functionName(callback) {
+            setTimeout(function() {
+              console.log("Peter");
+              callback();
+            }, 1000);
+          }
+    ")</p>
+    <p>("
+        secondName(function() {
+            console.log("Smith");
+          });   
+    ")</p>
+    <p>In this exemple we present a anonymous call back function</p>
+    <p>First, the functionName() takes a callback function as an argumernt</p>
+    <p>It simulates an asynchrous operation using setTimeout and after call the callback function.</p>
+    <p>The anonymous callBack function is defined using function(), whithout giving a name.</p>
+    <p>After the time out passes both messages are presented showing the full name.</p>
+    <br>
+    <br>
+    <h3>5 - Send data with GET requests over HTTP in express</h3>
+    <p>Data can be sent with GET requests by including it as query parameters in the URL</p>
+    <p> Insie the get we can write before sending the data:</p>
+    <p>("
+         const search = req.query.q;
+         const result = serachData(serach);
+         res.send = result;    
+    ")</p>
+    <p>where the data that we want to find can be a const or array of data we presented before</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>

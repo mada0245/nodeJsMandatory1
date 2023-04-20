@@ -1,72 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lesson4Page</title>
-    <link rel="stylesheet" href="../css/global/global.css">
-</head>
-<body>
-    <div>
-        <h1>Lesson 4</h1>
-    </div>
-    <div class = "description text" id = "description4">
-        <h2 >Description</h2>
-        <p>1 - Can write a fetch request without hesitation</p>
-        <p>2 - Can get the Date in Javascript</p>
-       
-    </div>
-    <div class = "WhatDidWeLearn text text2" id = "LearningTopics4">
-        <h3>1 - Fetch</h3>
-        <h4>GET</h4>
-        <p>("
-            fetch('https://example.com/data')
+<div>
+    <h1>Lesson 4</h1>
+</div>
+<div class = "description text" id = "description4">
+    <h2 >Description</h2>
+    <p>1 - Can write a fetch request without hesitation</p>
+    <p>2 - Can get the Date in Javascript</p>
+   
+</div>
+<div class = "WhatDidWeLearn text text2" id = "LearningTopics4">
+    <h3>1 - Fetch</h3>
+    <h4>GET</h4>
+    <p>("
+        fetch('https://example.com/data')
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.error(error));    
+    ")</p>
+    <h4>PUT</h4>
+    <p>("
+        fetch('https://example.com/data/123', {
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ name: "firstName secondName", age: 26 })
+          })
             .then(response => response.json())
             .then(data => console.log(data))
             .catch(error => console.error(error));    
-        ")</p>
-        <h4>PUT</h4>
-        <p>("
-            fetch('https://example.com/data/123', {
-                method: 'PUT',
-                headers: {
-                  'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ name: "firstName secondName", age: 26 })
-              })
-                .then(response => response.json())
-                .then(data => console.log(data))
-                .catch(error => console.error(error));    
-        ")</p>
-        <br>
-        <br>
-        <h3>2 - Getting the date in javascript</h3>
-        <p>("
-            const currentDate = new Date();
-            console.log(currentDate);    
-        ")</p>
-        <p>This returns the current date, hour and hour region</p>
-        <p>Is also possible to get part of the date using the date methods as so:</p>
-        <p>("
-            const currentDate = new Date();
-            const currentYear = currentDate.getFullYear();
-            console.log(currentYear);    
-        ")</p>
-        <p>This will return the current year</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </div>
-    <div>
-        <button class="confirmButton button confirmLessonButton" onclick="goMainPage()">Main Page</button>
-        <br>
-        <br>
-        <button class="cancelButton button cancelLessonButton" onclick="goLoginPage()">Logout</button>
-    </div>
-    <script src="../js/global/global.js"></script>
-</body>
-</html
+    ")</p>
+    <br>
+    <br>
+    <h3>2 - Getting the date in javascript</h3>
+    <p>("
+        const currentDate = new Date();
+        console.log(currentDate);    
+    ")</p>
+    <p>This returns the current date, hour and hour region</p>
+    <p>Is also possible to get part of the date using the date methods as so:</p>
+    <p>("
+        const currentDate = new Date();
+        const currentYear = currentDate.getFullYear();
+        console.log(currentYear);    
+    ")</p>
+    <p>This will return the current year</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>

@@ -1,70 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lesson7Page</title>
-    <link rel="stylesheet" href="../css/global/global.css">
-</head>
-<body>
-    <div>
-        <h1>Lesson 7</h1>
-    </div>
-    <div class = "description text" id = "description7">
-        <h2 >Description</h2>
-        <p>1 - Understands the arguments for and against SSR vs. CSR when it comes to: 1. time 2. ressources spent (duration, when and where) 3. and SEO</p>
-        <p>2 - Understands how code affects application memory. - XSS. Exactly what might cause it and how to sanitize by using an NPM package/p>
-       
-    </div>
-    <div class = "WhatDidWeLearn text text2" id = "LearningTopics7">
-        <h3>1 - SSR vs CSR</h3>
-        <h4>SSR</h4>
-        <h4>+</h4>
-        <p>Faster in slow devices: because the initial HTML is loaded from the server</p>
-        <p>Better accessibility</p>
-        <p>Can provide better SEO results because search engines can crawl and index the pages more easily</p>
-        <h4>-</h4>
-        <p>Increased server load</p>
-        <p>Pages that requiere a round trip to the server may have a slower load</p>
-        <p>Can be more complex to implement and maintain because it requires additional server-side configuration and setup</p>
-        <h4>CSR</h4>
-        <h4>+</h4>
-        <p>Faster page loads because the initial HTML is loaded fast and the JavaScript code takes over to render the page dynamically</p>
-        <p>It allows for dynamic updates without the need for page refreshes</p>
-        <p>Easier and more flexible maintenance and development</p>
-        <h4>-</h4>
-        <p>SEO challenges, search engines may not be able to crawl and index the pages properly</p>
-        <p>Performance issues on slow devices</p>
-        <p>CSR can be less accessible because the initial HTML is not available to users who have limited access to JavaScript</p>
-        <br>
-        <br>
-        <h3>2 - What couses XSS and how sanitaize using npm package</h3>
-        <p>XSS occurs when an someone is able to insert malicious code into a web page that is then executed by a user's browser</p>
-        <p>This can happen in many ways, like inserting code into form fields, URL parameters, or cookies</p>
-        <h4>Using npm package</h4>
-        <p>("npm install xss") -> install xss package</p>
-        <p>In the js file:</p>
-        <p>("const xss = require('xss');")</p>
-        <p>Then use the xss fuction to sanitaize the inputs</p>
-        <p>("
-            const input = "alert('XSS PROBLEM')";
-            const sanitaizedInput = xss(input);
-            console.log(sanitaizedInput);   
-        ")</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </div>
-    <div>
-        <button class="confirmButton button confirmLessonButton" onclick="goMainPage()">Main Page</button>
-        <br>
-        <br>
-        <button class="cancelButton button cancelLessonButton" onclick="goLoginPage()">Logout</button>
-    </div>
-    <script src="../js/global/global.js"></script>
-</body>
-</html
+<div>
+    <h1>Lesson 7</h1>
+</div>
+<div class = "description text" id = "description7">
+    <h2 >Description</h2>
+    <p>1 - Understands the arguments for and against SSR vs. CSR when it comes to: 1. time 2. ressources spent (duration, when and where) 3. and SEO</p>
+    <p>2 - Understands how code affects application memory. - XSS. Exactly what might cause it and how to sanitize by using an NPM package/p>
+   
+</div>
+<div class = "WhatDidWeLearn text text2" id = "LearningTopics7">
+    <h3>1 - SSR vs CSR</h3>
+    <h4>SSR</h4>
+    <h4>+</h4>
+    <p>Faster in slow devices: because the initial HTML is loaded from the server</p>
+    <p>Better accessibility</p>
+    <p>Can provide better SEO results because search engines can crawl and index the pages more easily</p>
+    <h4>-</h4>
+    <p>Increased server load</p>
+    <p>Pages that requiere a round trip to the server may have a slower load</p>
+    <p>Can be more complex to implement and maintain because it requires additional server-side configuration and setup</p>
+    <h4>CSR</h4>
+    <h4>+</h4>
+    <p>Faster page loads because the initial HTML is loaded fast and the JavaScript code takes over to render the page dynamically</p>
+    <p>It allows for dynamic updates without the need for page refreshes</p>
+    <p>Easier and more flexible maintenance and development</p>
+    <h4>-</h4>
+    <p>SEO challenges, search engines may not be able to crawl and index the pages properly</p>
+    <p>Performance issues on slow devices</p>
+    <p>CSR can be less accessible because the initial HTML is not available to users who have limited access to JavaScript</p>
+    <br>
+    <br>
+    <h3>2 - What couses XSS and how sanitaize using npm package</h3>
+    <p>XSS occurs when an someone is able to insert malicious code into a web page that is then executed by a user's browser</p>
+    <p>This can happen in many ways, like inserting code into form fields, URL parameters, or cookies</p>
+    <h4>Using npm package</h4>
+    <p>("npm install xss") -> install xss package</p>
+    <p>In the js file:</p>
+    <p>("const xss = require('xss');")</p>
+    <p>Then use the xss fuction to sanitaize the inputs</p>
+    <p>("
+        const input = "alert('XSS PROBLEM')";
+        const sanitaizedInput = xss(input);
+        console.log(sanitaizedInput);   
+    ")</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>

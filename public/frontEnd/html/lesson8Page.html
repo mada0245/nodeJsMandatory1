@@ -1,117 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lesson8Page</title>
-    <link rel="stylesheet" href="../css/global/global.css">
-</head>
-<body>
-    <div>
-        <h1>Lesson 8</h1>
-    </div>
-    <div class = "description text" id = "description8">
-        <h2 >Description</h2>
-        <p>1 - Can define and run scripts</p>
-        <p>2 - Knows how to define environment variables natively in Node.js</p>
-        <p>3 - Understand how forms work</p>
-        <p>4 - Can start a Svelte project with `npm create vite`</p>
-        <p>5 - Knows how to create components and pass props</p>
+<div>
+    <h1>Lesson 8</h1>
+</div>
+<div class = "description text" id = "description8">
+    <h2 >Description</h2>
+    <p>1 - Can define and run scripts</p>
+    <p>2 - Knows how to define environment variables natively in Node.js</p>
+    <p>3 - Understand how forms work</p>
+    <p>4 - Can start a Svelte project with `npm create vite`</p>
+    <p>5 - Knows how to create components and pass props</p>
 
-       
-    </div>
-    <div class = "WhatDidWeLearn text text2" id = "LearningTopics8">
-        <h3>1 - Scripts</h3>
-        <p>Are pieces of code that are executed on a web page. Are written in JavaScript and are inserted within an HTML file using the script tag</p>
-        <p>Scripts can be used for various functions as adding dynamic content, manipulate data, create APIs, etc</p>
-        <p> scripts can be ran in various ways as inserting them in a html file, whithin the script tag, presenting a source path to another file in html, whith the cmd after installing node.js or in the browser console</p>
-        <br>
-        <br>
-        <h3>2 - Enviroment variables natively in Node.js</h3>
-        <p>To define an environment variable in Node.js we can:</p>
-        <p> -> Set the environment variable directly in the command line when running the Node.js application</p>
-        <p>("PORT=3000 node app.js")</p>
-        <p>This will set the port to 3000 and run app.js</p>
-        <p> -> set the environment variables in a .env file in the root directory</p>
-        <p>("
-            PORT=3000
-            DB_USER=myusername
-            DB_PASS=mypassword"
-        )</p>
-        <p>where the format is VARNAME = value</p>
-        <p>("npm install dotenv")</p>
-        <p>then instal the dotenv package</p>
-        <p>in js</p>
-        <p>("require('dotenv').config();")</p>
-        <p>("const port = process.env.PORT")</p>
-        <p>this will return the port</p>
-        <br>
-        <br>
-        <h3>3 - Forms</h3>
-        <p>To start up we have to use HTML to create a form that includes input fields</p>
-        <p> ("form action="/submit-form" method="POST"
-            label for="name">Name: /label
-            input type="text" id="name" name="name"
-            /form
-        ")</p>
-        <p>then in app.js</p>
-        <p>("
-            const express = require('express');
-            const app = express();
+   
+</div>
+<div class = "WhatDidWeLearn text text2" id = "LearningTopics8">
+    <h3>1 - Scripts</h3>
+    <p>Are pieces of code that are executed on a web page. Are written in JavaScript and are inserted within an HTML file using the script tag</p>
+    <p>Scripts can be used for various functions as adding dynamic content, manipulate data, create APIs, etc</p>
+    <p> scripts can be ran in various ways as inserting them in a html file, whithin the script tag, presenting a source path to another file in html, whith the cmd after installing node.js or in the browser console</p>
+    <br>
+    <br>
+    <h3>2 - Enviroment variables natively in Node.js</h3>
+    <p>To define an environment variable in Node.js we can:</p>
+    <p> -> Set the environment variable directly in the command line when running the Node.js application</p>
+    <p>("PORT=3000 node app.js")</p>
+    <p>This will set the port to 3000 and run app.js</p>
+    <p> -> set the environment variables in a .env file in the root directory</p>
+    <p>("
+        PORT=3000
+        DB_USER=myusername
+        DB_PASS=mypassword"
+    )</p>
+    <p>where the format is VARNAME = value</p>
+    <p>("npm install dotenv")</p>
+    <p>then instal the dotenv package</p>
+    <p>in js</p>
+    <p>("require('dotenv').config();")</p>
+    <p>("const port = process.env.PORT")</p>
+    <p>this will return the port</p>
+    <br>
+    <br>
+    <h3>3 - Forms</h3>
+    <p>To start up we have to use HTML to create a form that includes input fields</p>
+    <p> ("form action="/submit-form" method="POST"
+        label for="name">Name: /label
+        input type="text" id="name" name="name"
+        /form
+    ")</p>
+    <p>then in app.js</p>
+    <p>("
+        const express = require('express');
+        const app = express();
 
-            app.post('/submit-form', (req, res) => {
-            code
-            });    
-        ")</p>
-        <p>here, the path correspond to the action of the form</p>
-        <p>("
-            const bodyParser = require('body-parser');
+        app.post('/submit-form', (req, res) => {
+        code
+        });    
+    ")</p>
+    <p>here, the path correspond to the action of the form</p>
+    <p>("
+        const bodyParser = require('body-parser');
 
-            app.use(bodyParser.urlencoded({ extended: true }));
+        app.use(bodyParser.urlencoded({ extended: true }));
 
-            app.post('/submit-form', (req, res) => {
-             const name = req.body.name;
-             /*use the form data*/
-            });    
-        ")</p>
-        <p>body-parser to parse the form data from the request body, and then assigns the values of the name</p>
-        <br>
-        <br>
-        <h3>4 - Starting a Svelte project</h3>
-        <p>("npm init vite")</p>
-        <p>after, choose the framework svelte</p>
-        <p>go to the project location</p>
-        <p>install dependencies with ("npm install")</p>
-        <p>("npm run dev") -> start development server</p>
-        <p>open the localhost to see the results</p>
-        <br>
-        <br>
-        <h3>5 - Creating components and pass props</h3>
-        <p>Components can be created by defining functions that encapsulate some logic and return a piece of user intreface</p>
-        <p>("
-            function Button(props) {
-                return `button style="background-color: ${props.color}">
-                          ${props.label}
-                        /button>`;
-              }    
-        ")</p>
-        <p>("const newButton = Button({ color: "red", label: "Click me!" });")</p>
-        <p>("console.log(newButton);")</p>
-        <p>we show button in the console by logging the newButton variable. This will output the string of HTML representing the button</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </div>
-    <div>
-        <button class="confirmButton button confirmLessonButton" onclick="goMainPage()">Main Page</button>
-        <br>
-        <br>
-        <button class="cancelButton button cancelLessonButton" onclick="goLoginPage()">Logout</button>
-    </div>
-    <script src="../js/global/global.js"></script>
-</body>
-</html
+        app.post('/submit-form', (req, res) => {
+         const name = req.body.name;
+         /*use the form data*/
+        });    
+    ")</p>
+    <p>body-parser to parse the form data from the request body, and then assigns the values of the name</p>
+    <br>
+    <br>
+    <h3>4 - Starting a Svelte project</h3>
+    <p>("npm init vite")</p>
+    <p>after, choose the framework svelte</p>
+    <p>go to the project location</p>
+    <p>install dependencies with ("npm install")</p>
+    <p>("npm run dev") -> start development server</p>
+    <p>open the localhost to see the results</p>
+    <br>
+    <br>
+    <h3>5 - Creating components and pass props</h3>
+    <p>Components can be created by defining functions that encapsulate some logic and return a piece of user intreface</p>
+    <p>("
+        function Button(props) {
+            return `button style="background-color: ${props.color}">
+                      ${props.label}
+                    /button>`;
+          }    
+    ")</p>
+    <p>("const newButton = Button({ color: "red", label: "Click me!" });")</p>
+    <p>("console.log(newButton);")</p>
+    <p>we show button in the console by logging the newButton variable. This will output the string of HTML representing the button</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>

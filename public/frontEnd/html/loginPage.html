@@ -1,45 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>loginPage</title>
-    <link rel="stylesheet" href="../css/global/global.css">
-</head>
-<body>
-    <div class="loginText">
-        <p class="title" id="loginTitle">Login</p>
-    </div>
+<div class="loginText">
+    <p class="title" id="loginTitle">Login</p>
+</div>
+
+<div>
 
     <div>
-
-        <div>
-            <p class="subTitle" id="loginSubTitle">Please insert your credentials</p>
-            <p class="notes" id="loginUsername">Username = admin</p>
-            <p class="notes" id="loginPassword">Password = pass</p>
-        </div>
-    
-        <!--Input-->
-        <div class="input_class">
-            <h2>
-                <label for="username">Username:</label>
-                <br>
-                <input type="text" id="username"><br><br>
-    
-                <label for="password">Password:</label>
-                <br>
-                <input type="password" id="password"><br><br>
-            </h2>
-        </div>
-    
-        <!--buttons-->
-        <div>
-            <button class="confirmButton button" id ="confirmBtn" onclick="verifyLogin()" >Confirm</button>
-        </div>
-    
+        <p class="subTitle" id="loginSubTitle">Please insert your credentials</p>
+        <p class="notes" id="loginUsername">Username = admin</p>
+        <p class="notes" id="loginPassword">Password = pass</p>
     </div>
-    <script src="../js/loginPage.js"></script>
-    <script src="../js/global/global.js"></script>
+
+    <!--Input-->
+    <div class="input_class">
+        <h2>
+            <label for="username">Username:</label>
+            <br>
+            <input type="text" id="username"><br><br>
+
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" id="password"><br><br>
+        </h2>
+    </div>
+
+    <!--buttons-->
+    <div>
+        <button class="confirmButton button" id ="confirmBtn" onclick="verifyLogin()" >Confirm</button>
+    </div>
+
+</div>
+<script src="../js/loginPage.js"></script>
+<script src="../js/global/global.js"></script>
 </body>
 </html>

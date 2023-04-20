@@ -1,42 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>newPage</title>
-    <link rel="stylesheet" href="../css/global/global.css">
-</head>
-<body>
-    <div>
-        <h1 class = "title">New Page</h1>
-    </div>
-    <div>
-        <form action="/submit-form" method="POST">
-            <label for="Description">Description:</label>
-            <input type="text" id="description" name="description"><br>
-            <br>
-            <br>
-            <br>
-            <label for="Text">Text:</label>
-            <input type="text" id="text" name="text"><br>
-            <br>
-            <br>
-            <br>
-            <p class="notes">A new page will not be created since there is no data base to store the information in</p>
-            <p class="notes">Insted, if you open your console, you will see the inserted values presented</p>
-            <input class = "confirmButton button" type="submit" value="Submit">
-            <br>
-            <br>
-            <br>
-          </form>
-    </div>
-    <div>
-        <button class="confirmButton button confirmeNewPageButton" onclick="goMainPage()">Main Page</button>
+<div>
+    <h1 class = "title">New Page</h1>
+</div>
+<div>
+    <form action="/submit-form" method="POST">
+        <label for="Description">Description:</label>
+        <input type="text" id="description" name="description"><br>
         <br>
         <br>
-        <button class="cancelButton button cancelNewPageButton" onclick="goLoginPage()">Logout</button>
-    </div>
-    <script src="../js/global/global.js"></script>
+        <br>
+        <label for="Text">Text:</label>
+        <input type="text" id="text" name="text"><br>
+        <br>
+        <br>
+        <br>
+        <p class="notes">A new page will not be created since there is no data base to store the information in</p>
+        <p class="notes">Insted, if you open your console, you will see the inserted values presented</p>
+        <input class = "confirmButton button" type="submit" value="Submit">
+        <br>
+        <br>
+        <br>
+      </form>
+</div>
+<div>
+    <button class="confirmButton button confirmeNewPageButton" onclick="goMainPage()">Main Page</button>
+    <br>
+    <br>
+    <button class="cancelButton button cancelNewPageButton" onclick="goLoginPage()">Logout</button>
+</div>
+<script src="../js/global/global.js"></script>
 </body>
 </html>

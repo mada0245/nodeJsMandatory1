@@ -1,121 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lesson1Page</title>
-    <link rel="stylesheet" href="../css/global/global.css">
-</head>
-<body>
-    <div>
-        <h1>Lesson 1</h1>
-    </div>
-    <div class = "description text" id = "description1">
+<div>
+    <h1>Lesson 1</h1>
+</div>
+<div class = "description text" id = "description1">
 
-        <h2 >Description</h2>
-        <p>1 - Can with with Git in the terminal</p>
-        <p>2 - Understand and work with data types in Javascript</p>
-        <p>3 - Can explain what Node.js is and how to run files with it</p>
-        <p>4 - Can design a REST API</p>
-        <p>5 - Can argue why clean code and following code conventions is a good idea</p>
-        <br>
-        <br>
-       
-    </div>
-    <div class = "WhatDidWeLearn text text2" id = "LearningTopics1">
-        <h3>1 - This is how to use git in a project:</h3>
-        <p>("mkdir folderName") -> Create a new project folder</p>
-        <p>("cd folderName") -> Go to project directory</p>
-        <p>("git init") -> Initialize a Git repository</p>
-        <p>Create a new repository on github and copy the repositoryURL</p>
-        <p>("git remote add origin repositoryURL") -> Add the remote repository to your local Git repository</p>
-        <p>("touch fileName" + ".fileExtention") -> Create a file</p>
-        <p>("git add filName" + ".fileExtention" || "git .") -> Stage the changes of a file or all files in the directory</p>
-        <p>("git commit -m "message"") -> Commit the staged changes</p>
-        <p>("git push -u origin main") -> Push changes</p>
-        <br>
-        <br>
-        <h3>2 - This are the data types in javascript:</h3>
-        <h4>Primitive data types :</h4>
-        <p>Number : represents number</p>
-        <p>String : represents text</p>
-        <p>Boolean : represents true or false</p>
-        <P>Null : represents abscence of object</P>
-        <p>Undefined : represents abscence of value</p>
-        <p>Symbol : reprresents unique identifire</p>
-        <h4>Object data types : Can contain any combination of primitive data types and other objects </h4>
-        <h4>Function data types : Are objects that can be assigned to variables, passed as arguments, and returned as values</h4>
-        <h4>Array data types : Store any cobination of data types and objects</h4>
-        <p>BigInt data types : Represent very big Intengers that pass the max sizy of, number data type</p>
-        <br>
-        <br>
-        <h3>3 - About node.js</h3>
-        <p>Node.js is a server-side runtime environment build on v8, google chrome javascript engine.</p>
-        <p>It is used to build web applications that have big performance and are very scalable</p>
-        <p>In it is only used java script to build the code which means other languages will not be necessery back or front end</p>
-        <p>Node.js has a big set of lybraries that can be used and it is also know to be very scalable and quick becaouse has a non-blocking I/O which, with, can handel many request at once.</p>
-        <br>
-        <br>   
-        <h3>4 - This is how to design a REST API with express in Node.js</h3>
-        <p>("npm init -y " , "npm install express") </p>
-        <p>make a js file file named app</p>
-        <h4>In app.js :<h4>
-        <p>("const express = require("express");")</p>
-        <p>("const app = express();")</p>
-        <p>("
-            app.get("/link", (req, res) => {
-            res.send({ /*code*/ });
-            });
-            
-        ") -> get something from the server</p>
-        <p>("
-            app.get("/link/:id", (req, res) => {
+    <h2 >Description</h2>
+    <p>1 - Can with with Git in the terminal</p>
+    <p>2 - Understand and work with data types in Javascript</p>
+    <p>3 - Can explain what Node.js is and how to run files with it</p>
+    <p>4 - Can design a REST API</p>
+    <p>5 - Can argue why clean code and following code conventions is a good idea</p>
+    <br>
+    <br>
+   
+</div>
+<div class = "WhatDidWeLearn text text2" id = "LearningTopics1">
+    <h3>1 - This is how to use git in a project:</h3>
+    <p>("mkdir folderName") -> Create a new project folder</p>
+    <p>("cd folderName") -> Go to project directory</p>
+    <p>("git init") -> Initialize a Git repository</p>
+    <p>Create a new repository on github and copy the repositoryURL</p>
+    <p>("git remote add origin repositoryURL") -> Add the remote repository to your local Git repository</p>
+    <p>("touch fileName" + ".fileExtention") -> Create a file</p>
+    <p>("git add filName" + ".fileExtention" || "git .") -> Stage the changes of a file or all files in the directory</p>
+    <p>("git commit -m "message"") -> Commit the staged changes</p>
+    <p>("git push -u origin main") -> Push changes</p>
+    <br>
+    <br>
+    <h3>2 - This are the data types in javascript:</h3>
+    <h4>Primitive data types :</h4>
+    <p>Number : represents number</p>
+    <p>String : represents text</p>
+    <p>Boolean : represents true or false</p>
+    <P>Null : represents abscence of object</P>
+    <p>Undefined : represents abscence of value</p>
+    <p>Symbol : reprresents unique identifire</p>
+    <h4>Object data types : Can contain any combination of primitive data types and other objects </h4>
+    <h4>Function data types : Are objects that can be assigned to variables, passed as arguments, and returned as values</h4>
+    <h4>Array data types : Store any cobination of data types and objects</h4>
+    <p>BigInt data types : Represent very big Intengers that pass the max sizy of, number data type</p>
+    <br>
+    <br>
+    <h3>3 - About node.js</h3>
+    <p>Node.js is a server-side runtime environment build on v8, google chrome javascript engine.</p>
+    <p>It is used to build web applications that have big performance and are very scalable</p>
+    <p>In it is only used java script to build the code which means other languages will not be necessery back or front end</p>
+    <p>Node.js has a big set of lybraries that can be used and it is also know to be very scalable and quick becaouse has a non-blocking I/O which, with, can handel many request at once.</p>
+    <br>
+    <br>   
+    <h3>4 - This is how to design a REST API with express in Node.js</h3>
+    <p>("npm init -y " , "npm install express") </p>
+    <p>make a js file file named app</p>
+    <h4>In app.js :<h4>
+    <p>("const express = require("express");")</p>
+    <p>("const app = express();")</p>
+    <p>("
+        app.get("/link", (req, res) => {
+        res.send({ /*code*/ });
+        });
+        
+    ") -> get something from the server</p>
+    <p>("
+        app.get("/link/:id", (req, res) => {
+        /*code*/
+            res.send({ /*response code*/ });
+        });
+    ") -> get something from the server by id</p>
+    <p>("
+        app.post("/link/post", (req, res) => {
             /*code*/
-                res.send({ /*response code*/ });
-            });
-        ") -> get something from the server by id</p>
-        <p>("
-            app.post("/link/post", (req, res) => {
-                /*code*/
-                res.send({ /*response code*/ });
-                });    
-        ") -> post something to the server</p>
-        <p>("
-            app.patch("/link/:patch", (req, res) => {
-                /*code*/
-                res.send({ /*response code*/ });
-                });    
-        ") -> patch something from the server by id</p>
-        <p>("
-            app.delete("/link/:delete", (req, res) => {
-                /*code*/
-                res.send({ /*response code*/ });
-                });    
-        ") -> delete something from the server by id</p>
-        <p>("
-            app.listen(8080, () => {
-                console.log("Server is running on port", 8080);
+            res.send({ /*response code*/ });
             });    
-        ") identify the server port and print he message when it is running</p>
-        <br>
-        <br>   
-        <h3>5 - Why is clean code convetion good ?</h3>
-        <p>Clean code makes everything easiear to find. It is more pleasable to read and bugs are easier to be identyfied and fixed.</p>
-        <p>If everything is a mess, the developer has more difficulties to work and it is very hard for the code to be passed to somone else or to be reused</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-    </div>
-    <div>
-        <button class="confirmButton button confirmLessonButton" onclick="goMainPage()">Main Page</button>
-        <br>
-        <br>
-        <button class="cancelButton button cancelLessonButton" onclick="goLoginPage()">Logout</button>
-    </div>
-    <script src="../js/global/global.js"></script>
-</body>
-</html>
+    ") -> post something to the server</p>
+    <p>("
+        app.patch("/link/:patch", (req, res) => {
+            /*code*/
+            res.send({ /*response code*/ });
+            });    
+    ") -> patch something from the server by id</p>
+    <p>("
+        app.delete("/link/:delete", (req, res) => {
+            /*code*/
+            res.send({ /*response code*/ });
+            });    
+    ") -> delete something from the server by id</p>
+    <p>("
+        app.listen(8080, () => {
+            console.log("Server is running on port", 8080);
+        });    
+    ") identify the server port and print he message when it is running</p>
+    <br>
+    <br>   
+    <h3>5 - Why is clean code convetion good ?</h3>
+    <p>Clean code makes everything easiear to find. It is more pleasable to read and bugs are easier to be identyfied and fixed.</p>
+    <p>If everything is a mess, the developer has more difficulties to work and it is very hard for the code to be passed to somone else or to be reused</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
